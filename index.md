@@ -5,7 +5,7 @@ This is the documentation for CacheTest
 ## Building
 
 In Linux, to build the version that multiplies all elements of a vector by a
-constant (used to obtain the results in [Figure 1](results/mult-test.png) in the
+constant (used to obtain the results in [Figure 1](https://github.com/INFORMSJoC/JoCTemplate/blob/master/results/mult-test.png) in the
 paper), stepping K elements at a time, execute the following commands.
 
 ```
@@ -13,7 +13,7 @@ make mult
 ```
 
 Alternatively, to build the version that sums the elements of a vector (used
-to obtain the results [Figure 2](results/sum-test.png) in the paper), stepping K
+to obtain the results [Figure 2](https://github.com/INFORMSJoC/JoCTemplate/blob/master/results/mult-test.png) in the paper), stepping K
 elements at a time, do the following.
 
 ```
