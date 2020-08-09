@@ -28,12 +28,12 @@ Be sure to make clean before building a different version of the code.
 Figure 1 in the paper shows the results of the multiplication test with different
 values of K using `gcc` 7.5 on an Ubuntu Linux box.
 
-![Figure 1](https://github.com/INFORMSJoC/JoCTemplate/blob/master/results/mult-test.png)
+![Figure 1](https://raw.githubusercontent.com/INFORMSJoC/JoCTemplate/master/results/mult-test.png)
 
 Figure 2 in the paper shows the results of the sum test with different
 values of K using `gcc` 7.5 on an Ubuntu Linux box.
 
-![Figure 1](https://github.com/INFORMSJoC/JoCTemplate/blob/master/results/sum-test.png)
+![Figure 1](https://raw.githubusercontent.com/INFORMSJoC/JoCTemplate/master/results/sum-test.png)
 
 ## Replicating
 
