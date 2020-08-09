@@ -1,37 +1,67 @@
-## Welcome to GitHub Pages
+## Welcome to CacheTest
 
-You can use the [editor on GitHub](https://github.com/INFORMSJoC/JoCTemplate/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This is the documentation for CacheTest
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Building
 
-### Markdown
+In Linux, to build the version that multiplies all elements of a vector by a
+constant (used to obtain the results in [Figure 1](results/mult-test.png) in the
+paper), stepping K elements at a time, execute the following commands.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+make mult
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Alternatively, to build the version that sums the elements of a vector (used
+to obtain the results [Figure 2](results/sum-test.png) in the paper), stepping K
+elements at a time, do the following.
 
-### Jekyll Themes
+```
+make clean
+make sum
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/INFORMSJoC/JoCTemplate/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Be sure to make clean before building a different version of the code.
 
-### Support or Contact
+## Results
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Figure 1 in the paper shows the results of the multiplication test with different
+values of K using `gcc` 7.5 on an Ubuntu Linux box.
+
+![Figure 1](results/mult-test.png)
+
+Figure 2 in the paper shows the results of the sum test with different
+values of K using `gcc` 7.5 on an Ubuntu Linux box.
+
+![Figure 1](results/sum-test.png)
+
+## Replicating
+
+To replicate the results in [Figure 1](results/mult-test), do either
+
+```
+make mult-test
+```
+or
+```
+python test.py mult
+```
+To replicate the results in [Figure 2](results/sum-test), do either
+
+```
+make sum-test
+```
+or
+```
+python test.py sum
+```
+
+## Ongoing Development
+
+This code is being developed on an on-going basis at the author's
+[Github site](https://github.com/tkralphs/JoCTemplate).
+
+## Support
+
+For support in using this software, submit an
+[issue](https://github.com/tkralphs/JoCTemplate/issues/new).
