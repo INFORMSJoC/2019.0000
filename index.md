@@ -13,7 +13,7 @@ make mult
 ```
 
 Alternatively, to build the version that sums the elements of a vector (used
-to obtain the results [Figure 2](https://github.com/INFORMSJoC/JoCTemplate/blob/master/results/mult-test.png) in the paper), stepping K
+to obtain the results [Figure 2](https://github.com/INFORMSJoC/JoCTemplate/blob/master/results/sum-test.png) in the paper), stepping K
 elements at a time, do the following.
 
 ```
@@ -37,7 +37,7 @@ values of K using `gcc` 7.5 on an Ubuntu Linux box.
 
 ## Replicating
 
-To replicate the results in [Figure 1](results/mult-test), do either
+To replicate the results in [Figure 1](https://github.com/INFORMSJoC/JoCTemplate/blob/master/results/mult-test.png), do either
 
 ```
 make mult-test
@@ -46,7 +46,7 @@ or
 ```
 python test.py mult
 ```
-To replicate the results in [Figure 2](results/sum-test), do either
+To replicate the results in [Figure 2](https://github.com/INFORMSJoC/JoCTemplate/blob/master/results/sum-test.png), do either
 
 ```
 make sum-test
