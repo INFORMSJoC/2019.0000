@@ -1,24 +1,15 @@
 [![INFORMS Journal on Computing Logo](https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg)](https://pubsonline.informs.org/journal/ijoc)
 
-# CacheTest
+# Data and R scripts for the Case Study of Unmanned Aerial Vehicle Information Collection Missions with Uncertain Characteristics
 
-This archive is distributed in association with the [INFORMS Journal on
-Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
+This archive is distributed in association with the [INFORMS Journal on Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
 
-The software and data in this repository are a snapshot of the software and data
-that were used in the research reported on in the paper 
-[This is a Template](https://doi.org/10.1287/ijoc.2019.0934) by T. Ralphs. 
-The snapshot is based on 
-[this SHA](https://github.com/tkralphs/JoCTemplate/commit/f7f30c63adbcb0811e5a133e1def696b74f3ba15) 
-in the development repository. 
+The software and data in this repository are a snapshot of the software and data that were used in the research reported on in the paper
+[Unmanned Aerial Vehicle Information Collection Missions with Uncertain Characteristics](https://doi.org/) by M.D. Moskal, E. Dasdemir and R. Batta.
 
-**Important: This code is being developed on an on-going basis at 
-https://github.com/tkralphs/JoCTemplate. Please go there if you would like to
-get a more recent version or would like support**
 
 ## Cite
-
-To cite this software, please cite the [paper](https://doi.org/10.1287/ijoc.2019.0934) using its DOI and the software itself, using the following DOI.
+To cite this material, please cite the [paper](https://doi.org/) using its DOI and the software itself, using the following DOI.
 
 [![DOI](https://zenodo.org/badge/285853815.svg)](https://zenodo.org/badge/latestdoi/285853815)
 
@@ -26,79 +17,31 @@ Below is the BibTex for citing this version of the code.
 
 ```
 @article{CacheTest,
-  author =        {T. Ralphs},
+  author =        {Michael D. Moskal, Erdi Dasdemir, Rajan Batta},
   publisher =     {INFORMS Journal on Computing},
-  title =         {{CacheTest} Version v1.0},
-  year =          {2020},
-  doi =           {10.5281/zenodo.3977566},
+  year =          {2022},
+  doi =           {},
   url =           {https://github.com/INFORMSJoC/JoCTemplate},
 }  
 ```
 
 ## Description
 
-The goal of this software is to demonstrate the effect of cache optimization.
+The goal of this repository is to share data and R scripts of the case study of our paper. Our motivation is to ensure that our results are reproducible and to facilitate the coding efforts of those who want to run further experiments or improve our model.
 
-## Building
+## Repository Structure
+We have a quite simple repository structure.
 
-In Linux, to build the version that multiplies all elements of a vector by a
-constant (used to obtain the results in [Figure 1](results/mult-test.png) in the
-paper), stepping K elements at a time, execute the following commands.
+- [data and scripts](data_and_scripts) folder contains both the data (in .txt files) and R scripts of the civilian and military applications of the case study. There is also an additional spreadsheet (.xlsx file) with raw data to make it easier to understand the data in text files. Each R script reads the required input files located in the same folder. Please set the working directory accordingly at the first lines of the scripts.
 
-```
-make mult
-```
+## Data
+We adapt the data set provided by [Dasdemir et al. (2022)](https://doi.org/10.1016/j.cor.2022.105882) to create the problem instances for civilian and military applications. This data set includes the elevation and coordinate data of 58 fourteeners, and the water capacity, elevation, and coordinate data of 41 water reservoirs from the State of Colorado.
 
-Alternatively, to build the version that sums the elements of a vector (used
-to obtain the results [Figure 2](results/sum-test.png) in the paper), stepping K
-elements at a time, do the following.
+## R scripts
+R scripts employ [Gurobi](www.gurobi.com) solver to solve the mathematical optimization model. You should first install Gurobi on your computer and then the Gurobi R package to your R insallation.
 
-```
-make clean
-make sum
-```
-
-Be sure to make clean before building a different version of the code.
-
-## Results
-
-Figure 1 in the paper shows the results of the multiplication test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
-
-![Figure 1](results/mult-test.png)
-
-Figure 2 in the paper shows the results of the sum test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
-
-![Figure 1](results/sum-test.png)
-
-## Replicating
-
-To replicate the results in [Figure 1](results/mult-test), do either
-
-```
-make mult-test
-```
-or
-```
-python test.py mult
-```
-To replicate the results in [Figure 2](results/sum-test), do either
-
-```
-make sum-test
-```
-or
-```
-python test.py sum
-```
-
-## Ongoing Development
-
-This code is being developed on an on-going basis at the author's
-[Github site](https://github.com/tkralphs/JoCTemplate).
+- Please visit [Gurobi web page](https://www.gurobi.com/) for installing Gurobi and obtaining a license.
+-  Please visit [Gurobi R Installation Guide](https://cran.r-project.org/web/packages/prioritizr/vignettes/gurobi_installation.html) and [Installing the R Package](https://www.gurobi.com/documentation/9.5/quickstart_windows/r_ins_the_r_package.html) pages to use Gurobi on R.
 
 ## Support
-
-For support in using this software, submit an
-[issue](https://github.com/tkralphs/JoCTemplate/issues/new).
+For support in using the scripts and data you can reach Erdi Dasdemir (erdidasdemir@gmail.com).
