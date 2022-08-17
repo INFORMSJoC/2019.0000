@@ -9,9 +9,7 @@ The R scripts and data in this repository are a snapshot of the scripts and data
 
 
 ## Cite
-To cite this material, please cite the [paper](https://doi.org/) using its DOI and the software itself, using the following DOI.
-
-[![DOI](https://zenodo.org/badge/285853815.svg)](https://zenodo.org/badge/latestdoi/285853815)
+To cite this material, please cite the [paper](https://doi.org/) using its DOI.
 
 Below is the BibTex for citing this version of the code.
 
