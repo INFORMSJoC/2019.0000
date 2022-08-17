@@ -35,7 +35,7 @@ We have a quite simple repository structure.
 - [data and scripts](data_and_scripts) folder contains two subfolders for the civilian and military case application. Each subfolder contains the input data in text files and the corresponding R script. There is also an additional spreadsheet (.xlsx file) in the main folder with raw data to make it easier to understand the data. Note that Each R script reads the data from the input files in the same location. Please set the working directory accordingly at the first lines of the scripts.
 
 ## Data
-We adapt the data set provided by [Dasdemir et al. (2022)](https://doi.org/10.1016/j.cor.2022.105882) to create the problem instances for civilian and military applications. This data set includes the elevation and coordinate data of 58 fourteeners, and the water capacity, elevation, and coordinate data of 41 water reservoirs from the State of Colorado.
+We adapt the data set provided by [Dasdemir et al. (2022)](https://doi.org/10.1016/j.cor.2022.105882) to create the problem instances for civilian and military applications. This data set includes the elevation and coordinate data of 58 fourteeners, and the water capacity, elevation, and coordinate data of 41 water reservoirs from the State of Colorado. Please see [data and scripts](data_and_scripts) and [spreadsheet file](data_and_scripts/colorado-data-for-uav-case-study.xlsx) for the data.
 
 ## R scripts
 R scripts employ [Gurobi](www.gurobi.com) solver to solve the mathematical optimization model. You should first install Gurobi on your computer and then the Gurobi R package to your R insallation.
