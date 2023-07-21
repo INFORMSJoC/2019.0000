@@ -1,106 +1,48 @@
-[![INFORMS Journal on Computing Logo](https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg)](https://pubsonline.informs.org/journal/ijoc)
+# Ensemble Variance Reduction Methods for Stochastic Mixed-Integer Programming and their Application to the Stochastic Facility Location Problem
 
-# CacheTest
+This archive is distributed in association with the University of Southern California under the MIT License.
 
-This archive is distributed in association with the [INFORMS Journal on
-Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
+The software and data in this repository are a snapshot of the software and data that were used in the research reported on in the paper "Ensemble Variance Reduction Methods for Stochastic Mixed-Integer Programming and their Application to the Stochastic Facility Location Problem" by Jiajun Xu and Suvrajeet Sen.
 
-The software and data in this repository are a snapshot of the software and data
-that were used in the research reported on in the paper 
-[This is a Template](https://doi.org/10.1287/ijoc.2019.0000) by T. Ralphs. 
-The snapshot is based on 
-[this SHA](https://github.com/tkralphs/JoCTemplate/commit/f7f30c63adbcb0811e5a133e1def696b74f3ba15) 
-in the development repository. 
+A high-level structure of our algorithm is:
+![diagram](results/fig/diagram.png)
 
-**Important: This code is being developed on an on-going basis at 
-https://github.com/tkralphs/JoCTemplate. Please go there if you would like to
-get a more recent version or would like support**
-
-## Cite
-
+## Cite 
 To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
 
-https://doi.org/10.1287/ijoc.2019.0000
+https://doi.org/10.1287/ijoc.2021.0324
 
-https://doi.org/10.1287/ijoc.2019.0000.cd
+https://doi.org/10.1287/ijoc.2021.0324.cd
 
-Below is the BibTex for citing this snapshot of the respoitory.
-
+Below is the BibTex for citing this snapshot of the repository.
 ```
-@article{CacheTest,
-  author =        {T. Ralphs},
+@article{EVR,
+  author =        {J. Xu, S. Sen},
   publisher =     {INFORMS Journal on Computing},
-  title =         {{CacheTest}},
-  year =          {2020},
-  doi =           {10.1287/ijoc.2019.0000.cd},
-  url =           {https://github.com/INFORMSJoC/2019.0000},
-}  
+  title =         {Ensemble Variance Reduction Methods for Stochastic Mixed-Integer Programming and their Application to the Stochastic Facility Location Problem},
+  year =          {2023},
+  doi =           {10.1287/ijoc.2021.0324.cd},
+  url =          {https://github.com/INFORMSJoC/2021.0324},
+}
 ```
 
 ## Description
-
-The goal of this software is to demonstrate the effect of cache optimization.
+The goal of this software is to demonstrate the effect of ensemble variance reduction methods in the paper, including the kernel+compromise decision and the efficient budget allocation methods.
 
 ## Building
-
-In Linux, to build the version that multiplies all elements of a vector by a
-constant (used to obtain the results in [Figure 1](results/mult-test.png) in the
-paper), stepping K elements at a time, execute the following commands.
-
-```
-make mult
-```
-
-Alternatively, to build the version that sums the elements of a vector (used
-to obtain the results [Figure 2](results/sum-test.png) in the paper), stepping K
-elements at a time, do the following.
-
-```
-make clean
-make sum
-```
-
-Be sure to make clean before building a different version of the code.
+A prerequisite to build the files is a license for IBM CPLEX. Our source code can be quickly built with Apple Xcode. Please use the project files 'LShape_xcode.xcodeproj' in src/SMIP_VarianceReduction or in src/SMIP_OCBA. Alternatively, our code can be built with CMAKE. All the source files are in the src folder.
 
 ## Results
+![t1](results/fig/t1.png)
+![t2](results/fig/t2.png)
+![t3](results/fig/t3.png)
+![t4](results/fig/t4.png)
 
-Figure 1 in the paper shows the results of the multiplication test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
-
-![Figure 1](results/mult-test.png)
-
-Figure 2 in the paper shows the results of the sum test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
-
-![Figure 1](results/sum-test.png)
+The following figure illustrates the OCBA computational results: the evaluated sample size and estimated objective for the top 5 candidate solutions.
+![figure2](results/fig/ocba.png)
 
 ## Replicating
-
-To replicate the results in [Figure 1](results/mult-test), do either
-
-```
-make mult-test
-```
-or
-```
-python test.py mult
-```
-To replicate the results in [Figure 2](results/sum-test), do either
-
-```
-make sum-test
-```
-or
-```
-python test.py sum
-```
-
-## Ongoing Development
-
-This code is being developed on an on-going basis at the author's
-[Github site](https://github.com/tkralphs/JoCTemplate).
+To replicate the results, please compile the src for both variance reduction and the efficient budget allocation methods. Please use the scripts in the 'scripts' folder, and run the compiled programs with the input data in the 'data' folder.
 
 ## Support
-
-For support in using this software, submit an
-[issue](https://github.com/tkralphs/JoCTemplate/issues/new).
+For support in using this software, submit an issue.

@@ -1,0 +1,43 @@
+
+----------------------------------------- Compromise solution --------------------------------------
+
+Incumbent solution, non-zero position: (6, 24, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 2022.211930
+Error in estimation            : 0.001264
+Confidence interval at 95%     : [2020.934194, 2023.489666]
+Number of observations         : 2000
+Time to solve compromise problem   : 0.021378
+Total time                         : 16.892202
+Total time to solve master         : 12.623185
+Total time to solve subproblems    : 4.094540
+New Lower bound estimate (Agg. LB)               : 2022.829(+-1.890)
+Old Lower bound estimation             : 2022.792(+-1.898)
+
+
+ Opt. Time, Cpm. Time
+ 16.892     0.021
+
+
+  v^k, Std[v^k], Reduced Std, Agg. LB, UB
+ 2023.033  1.022       81.10%      [2020.939, 2024.719]     [2020.934, 2023.490]     
+
+------------------------------------------- Average solution ---------------------------------------
+
+(6, 24, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 2020.798080
+Error in estimation            : 0.001323
+Confidence interval at 95%     : [2019.460914, 2022.135246]
+Number of observations         : 2000
+
+---------------------------bagging output-------------------------- 
+bagging solution: 
+
+ Repeat time: 28 
+ Performance Estimate: 2023.032817 
+ number of distinct solutions 2 
+
+
+  v^k, Std[v^k], Reduced Std, Agg. LB, UB
+ 2023.033  1.022       81.10%      [2020.939, 2024.719]     [2019.461, 2022.135]     

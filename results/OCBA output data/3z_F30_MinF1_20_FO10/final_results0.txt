@@ -1,0 +1,153 @@
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3218.677352
+Error in estimation            : 0.000386
+Confidence interval at 95%     : [3218.055663, 3219.299041]
+Number of observations         : 2000
+(5, 7, 9, 11, 13, 21, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3253.539198
+Error in estimation            : 0.000387
+Confidence interval at 95%     : [3252.908898, 3254.169497]
+Number of observations         : 2000
+(1, 5, 7, 9, 13, 21, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3248.415269
+Error in estimation            : 0.000375
+Confidence interval at 95%     : [3247.806611, 3249.023926]
+Number of observations         : 2000
+(1, 5, 6, 7, 9, 11, 13, 20, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3230.728524
+Error in estimation            : 0.000391
+Confidence interval at 95%     : [3230.096360, 3231.360689]
+Number of observations         : 2000
+(1, 3, 5, 7, 8, 9, 11, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3219.301810
+Error in estimation            : 0.000386
+Confidence interval at 95%     : [3218.680051, 3219.923568]
+Number of observations         : 2000
+(1, 3, 5, 7, 9, 11, 20, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3227.304470
+Error in estimation            : 0.000392
+Confidence interval at 95%     : [3226.672139, 3227.936801]
+Number of observations         : 2000
+(1, 5, 7, 8, 9, 11, 13, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3223.446159
+Error in estimation            : 0.000373
+Confidence interval at 95%     : [3222.845567, 3224.046750]
+Number of observations         : 2000
+(1, 5, 7, 9, 11, 13, 18, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3223.523953
+Error in estimation            : 0.000394
+Confidence interval at 95%     : [3222.889674, 3224.158232]
+Number of observations         : 2000
+(1, 3, 5, 7, 9, 11, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3219.104933
+Error in estimation            : 0.000393
+Confidence interval at 95%     : [3218.471662, 3219.738204]
+Number of observations         : 2000
+(1, 5, 7, 9, 11, 13, 20, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3286.340512
+Error in estimation            : 0.000380
+Confidence interval at 95%     : [3285.716810, 3286.964213]
+Number of observations         : 2000
+(1, 5, 6, 7, 9, 11, 18, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3237.363429
+Error in estimation            : 0.000394
+Confidence interval at 95%     : [3236.725774, 3238.001084]
+Number of observations         : 2000
+(1, 3, 5, 7, 9, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3252.546406
+Error in estimation            : 0.000390
+Confidence interval at 95%     : [3251.911719, 3253.181094]
+Number of observations         : 2000
+(1, 3, 5, 6, 7, 9, 11, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3269.711070
+Error in estimation            : 0.000383
+Confidence interval at 95%     : [3269.085131, 3270.337009]
+Number of observations         : 2000
+(1, 5, 7, 8, 9, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3223.286906
+Error in estimation            : 0.000401
+Confidence interval at 95%     : [3222.640568, 3223.933245]
+Number of observations         : 2000
+(1, 5, 7, 9, 11, 13, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3227.984771
+Error in estimation            : 0.000393
+Confidence interval at 95%     : [3227.349882, 3228.619660]
+Number of observations         : 2000
+(3, 5, 7, 9, 11, 21, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3252.380459
+Error in estimation            : 0.000374
+Confidence interval at 95%     : [3251.772736, 3252.988182]
+Number of observations         : 2000
+(1, 5, 6, 7, 9, 11, 13, 18, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3232.357697
+Error in estimation            : 0.000385
+Confidence interval at 95%     : [3231.734700, 3232.980695]
+Number of observations         : 2000
+(1, 3, 5, 7, 9, 11, 18, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3233.633408
+Error in estimation            : 0.000400
+Confidence interval at 95%     : [3232.986031, 3234.280784]
+Number of observations         : 2000
+(5, 7, 9, 13, 19, 21, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3308.120566
+Error in estimation            : 0.000382
+Confidence interval at 95%     : [3307.489509, 3308.751622]
+Number of observations         : 2000
+(5, 6, 7, 9, 11, 13, 14, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3340.202559
+Error in estimation            : 0.000385
+Confidence interval at 95%     : [3339.559185, 3340.845933]
+Number of observations         : 2000
+(1, 5, 7, 9, 11, 13, 17, 19, 21, 23, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3232.975504
+Error in estimation            : 0.000401
+Confidence interval at 95%     : [3232.327366, 3233.623642]
+Number of observations         : 2000
+(1, 5, 7, 9, 13, 20, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3252.607811
+Error in estimation            : 0.000382
+Confidence interval at 95%     : [3251.986459, 3253.229163]
+Number of observations         : 2000
+(1, 5, 6, 7, 9, 11, 13, 23, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3317.123834
+Error in estimation            : 0.000383
+Confidence interval at 95%     : [3316.489246, 3317.758422]
+Number of observations         : 2000
+(5, 6, 7, 9, 13, 21, 26, )
+
+----------------------------------------- Final solution --------------------------------------
+
+OCBA solution, non-zero position: (5, 7, 9, 11, 13, 21, 23, 26, )
+Time to solve ocba problem   : 131.450369
+Time for saive SAA evaluation   : 621.352846
+Total time                         : 492.924967
+Total time to solve master         : 67.325873
+Total time to solve subproblems    : 290.397856
+Lower bound estimate               : 3219.574055
+Lower bound estimation std               : 0.454175
+
+ ocba_samples=&9018, naive_samples=&46000
+ print for latex
+9018      80.40%  [3218.684, 3220.464]    [3218.307, 3219.215]     0.8807

@@ -1,0 +1,43 @@
+
+----------------------------------------- Compromise solution --------------------------------------
+
+Incumbent solution, non-zero position: (2, 5, 8, 10, 20, 23, 24, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3044.962836
+Error in estimation            : 0.003146
+Confidence interval at 95%     : [3040.173508, 3049.752165]
+Number of observations         : 2000
+Time to solve compromise problem   : 0.087059
+Total time                         : 58.553645
+Total time to solve master         : 33.710498
+Total time to solve subproblems    : 23.250035
+New Lower bound estimate (Agg. LB)               : 3044.308(+-5.282)
+Old Lower bound estimation             : 3044.092(+-5.304)
+
+
+ Opt. Time, Cpm. Time
+ 58.554     0.087
+
+
+  v^k, Std[v^k], Reduced Std, Agg. LB, UB
+ 3044.264  2.810       80.75%      [3039.026, 3049.590]     [3040.174, 3049.752]     
+
+------------------------------------------- Average solution ---------------------------------------
+
+(2, 5, 8, 10, 20, 23, 24, 26, )
+------------------------------------------------------------- Evaluation ----------------------------------------------------------
+Upper bound estimate           : 3041.027587
+Error in estimation            : 0.003142
+Confidence interval at 95%     : [3036.250027, 3045.805148]
+Number of observations         : 2000
+
+---------------------------bagging output-------------------------- 
+bagging solution: 
+
+ Repeat time: 27 
+ Performance Estimate: 3044.263841 
+ number of distinct solutions 2 
+
+
+  v^k, Std[v^k], Reduced Std, Agg. LB, UB
+ 3044.264  2.810       80.75%      [3039.026, 3049.590]     [3036.250, 3045.805]     
