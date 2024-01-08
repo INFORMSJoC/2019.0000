@@ -67,7 +67,7 @@ Higher Fluency, Informativeness, and Harmonic Mean are better)
 ## Replicating
 
 <h3 align="left">Generate datasets</h3>
-Note: We only provide a small sample of news data. All the news data are downloaded from WSJ and we don't intend to publish 3rd party data. You can download data from https://www.wsj.com/news/archive/.
+Download data from https://www.wsj.com/news/archive/.
 
 To replicate the experiment, first, generate datasets using pre-trained BERT
 
