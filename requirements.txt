@@ -1,0 +1,26 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+nltk=3.4.4
+python=3.7.3
+python-dateutil=2.8.0
+python-graphviz=0.15
+python-libarchive-c=2.8
+pytorch-lightning=0.4.8
+pytorch-pretrained-bert=0.6.2
+tensorboard=2.4.1
+tensorboard-plugin-wit=1.7.0
+tensorboardx=2.1
+tensorflow=2.4.0
+tensorflow-estimator=2.4.0
+tensorflow-gpu=1.14.0
+tensorflow-hub=0.11.0
+torch=1.2.0
+torch-dct=0.1.5
+torchaudio=0.8.0
+torchtext=0.4.0
+torchvision=0.9.0+cu111
+torchviz=0.0.1
+tornado=6.0.3
+tqdm=4.54.1
+transformers=4.21.0
+translationstring=1.4

@@ -1,106 +1,89 @@
 [![INFORMS Journal on Computing Logo](https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg)](https://pubsonline.informs.org/journal/ijoc)
 
-# CacheTest
+# Let the Laser Beam Connect the Dots: Forecasting and Narrating Stock Market Volatility
 
 This archive is distributed in association with the [INFORMS Journal on
 Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
 
-The software and data in this repository are a snapshot of the software and data
-that were used in the research reported on in the paper 
-[This is a Template](https://doi.org/10.1287/ijoc.2019.0000) by T. Ralphs. 
-The snapshot is based on 
-[this SHA](https://github.com/tkralphs/JoCTemplate/commit/f7f30c63adbcb0811e5a133e1def696b74f3ba15) 
-in the development repository. 
+This repository contains supporting materials for the paper [Let the Laser Beam Connect the Dots: Forecasting and Narrating Stock Market Volatility](https://doi.org/10.1287/ijoc.2022.0055) by Zhu Zhang, Jie Yuan, and Amulya Gupta.
 
-**Important: This code is being developed on an on-going basis at 
-https://github.com/tkralphs/JoCTemplate. Please go there if you would like to
-get a more recent version or would like support**
+The software and data in this repository are a snapshot of the software and data that were used in the research reported in the paper.
 
 ## Cite
 
 To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
 
-https://doi.org/10.1287/ijoc.2019.0000
+https://doi.org/10.1287/ijoc.2022.0055
 
-https://doi.org/10.1287/ijoc.2019.0000.cd
+https://doi.org/10.1287/ijoc.2022.0055.cd
 
 Below is the BibTex for citing this snapshot of the respoitory.
 
 ```
-@article{CacheTest,
-  author =        {T. Ralphs},
+@article{LASER2022.0055,
+  author =        {Zhu Zhang and Jie Yuan and Amulya Gupta},
   publisher =     {INFORMS Journal on Computing},
-  title =         {{CacheTest}},
-  year =          {2020},
-  doi =           {10.1287/ijoc.2019.0000.cd},
-  url =           {https://github.com/INFORMSJoC/2019.0000},
+  title =         {Let the Laser Beam Connect the Dots:Forecasting and Narrating Stock Market Volatility},
+  year =          {2024},
+  doi =           {10.1287/ijoc.2022.0055.cd},
+  url =           {https://github.com/INFORMSJoC/2022.0055},
 }  
 ```
 
 ## Description
+We implement LASER in PyTorch. The implementation of LASER-BEAM is based on [constrained_decoding](https://github.com/chrishokamp/constrained_decoding/tree/master).
 
-The goal of this software is to demonstrate the effect of cache optimization.
+This is an example of how to set up the project locally and run [LASER](results/LASER4.png) model.
 
 ## Building
 
-In Linux, to build the version that multiplies all elements of a vector by a
-constant (used to obtain the results in [Figure 1](results/mult-test.png) in the
-paper), stepping K elements at a time, execute the following commands.
-
-```
-make mult
-```
-
-Alternatively, to build the version that sums the elements of a vector (used
-to obtain the results [Figure 2](results/sum-test.png) in the paper), stepping K
-elements at a time, do the following.
-
-```
-make clean
-make sum
-```
-
-Be sure to make clean before building a different version of the code.
+1. Clone and install the repo
+   ```
+   git clone https://github.com/INFORMSJoC/2022.0055.git
+   ```
+  
+2. Create an environment using
+   ```
+   conda create --name LASER --file requriements.txt
+   ```
 
 ## Results
 
-Figure 1 in the paper shows the results of the multiplication test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
+[Table 1](results/Table1.png) shows the results for market volatility forecasting. Lower MAPE and higher Precision, Recall, F-1 are better.
 
-![Figure 1](results/mult-test.png)
+[Table 2](results/Table2.png) shows the performance evaluation for model narration. (All scores are average over the collection of narratives.
+Higher Fluency, Informativeness, and Harmonic Mean are better)
 
-Figure 2 in the paper shows the results of the sum test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
+[Table 3](results/Table3.png) shows the time complexity of each component in LASER.
 
-![Figure 1](results/sum-test.png)
+[Table 6](results/Table6.png) shows the instance-level model performance when H = 1.
+
+[Table 7](results/Table7.png) shows an example: Generated narratives for short-term thread (forecasting model is LASER, and horizon H = 1).
+
+[Table 8](results/Table8.png) shows an example: Generated narratives for long-term threads (forecasting model is LASER model, and horizon H = 1).
+
+[Figure 6](results/F6.png) shows the qualitative analysis of volatility forecasting, short horizon (H=1).
 
 ## Replicating
 
-To replicate the results in [Figure 1](results/mult-test), do either
+<h3 align="left">Generate datasets</h3>
+Note: We only provide a small sample of news data. All the news data are downloaded from WSJ and we don't intend to publish 3rd party data. You can download data from https://www.wsj.com/news/archive/.
 
-```
-make mult-test
-```
-or
-```
-python test.py mult
-```
-To replicate the results in [Figure 2](results/sum-test), do either
+To replicate the experiment, first, generate datasets using pre-trained BERT
 
-```
-make sum-test
-```
-or
-```
-python test.py sum
-```
+  ```
+  python scripts/generate_dataset.py
+  ```
 
-## Ongoing Development
+<h3 align="left">Run training/validation/testing</h3>
+There are two tasks: SPVt1_future and SPVt22_future.
 
-This code is being developed on an on-going basis at the author's
-[Github site](https://github.com/tkralphs/JoCTemplate).
+* Run SPVt1_future: 
+  ```
+  python src/train_val_test.py SPVt1_future
+  ```
 
-## Support
-
-For support in using this software, submit an
-[issue](https://github.com/tkralphs/JoCTemplate/issues/new).
+* Run SPVt22_future:
+  ```
+  python src/train_val_test.py SPVt22_future
+  ```
