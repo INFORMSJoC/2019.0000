@@ -13,20 +13,20 @@ The software and data in this repository are a snapshot of the software and data
 
 To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
 
-https://doi.org/10.1287/ijoc.2022.0055
+https://doi.org/10.1287/ijoc.xxxx.xxxx
 
-https://doi.org/10.1287/ijoc.2022.0055.cd
+https://doi.org/10.1287/ijoc.xxxx.xxxx.cd
 
 Below is the BibTex for citing this snapshot of the respoitory.
 
 ```
-@article{LASER2022.0055,
+@article{xxxx,
   author =        {Zhu Zhang and Jie Yuan and Amulya Gupta},
   publisher =     {INFORMS Journal on Computing},
   title =         {Let the Laser Beam Connect the Dots:Forecasting and Narrating Stock Market Volatility},
-  year =          {2024},
-  doi =           {10.1287/ijoc.2022.0055.cd},
-  url =           {https://github.com/INFORMSJoC/2022.0055},
+  year =          {xxxx},
+  doi =           {10.1287/ijoc.xxxx.xxxx.cd},
+  url =           {https://github.com/INFORMSJoC/xxxx.xxxx},
 }  
 ```
 
