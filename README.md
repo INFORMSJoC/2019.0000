@@ -27,13 +27,14 @@ https://doi.org/10.1287/ijoc.2019.0000.cd
 Below is the BibTex for citing this snapshot of the respoitory.
 
 ```
-@article{CacheTest,
+@misc{CacheTest,
   author =        {T. Ralphs},
   publisher =     {INFORMS Journal on Computing},
   title =         {{CacheTest}},
   year =          {2020},
   doi =           {10.1287/ijoc.2019.0000.cd},
   url =           {https://github.com/INFORMSJoC/2019.0000},
+  note =          {Again, use your DOI here at the end of the link.  example: Available for download at https://github.com/INFORMSJoC/2019.0000},
 }  
 ```
 
